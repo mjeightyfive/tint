@@ -1,0 +1,32 @@
+{
+    "name": "@mjeightyfive/tint",
+    "version": "1.0.0",
+    "description": "base css styles",
+    "main": "src/scss/tint.scss",
+    "scripts": {
+        "start": "npm run watch",
+        "build": "node-sass src/scss -o dist",
+        "watch": "node-sass --watch src/scss -o dist",
+        "publish": "cp dist/tint.css example && gh-pages -d example"
+    },
+    "dependencies": {
+        "@babel/register": "7.4.4"
+    },
+    "devDependencies": {
+        "@mjeightyfive/stylelint-config": "0.0.5",
+        "gh-pages": "2.0.1",
+        "node-sass": "4.12.0",
+        "prettier": "1.18.2",
+        "stylelint": "10.1.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mjeightyfive/tint.git"
+    },
+    "author": "Marcin <mjeightyfive@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/mjeightyfive/tint/issues"
+    },
+    "homepage": "https://github.com/mjeightyfive/tint#readme"
+}
