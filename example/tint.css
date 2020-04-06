@@ -1,6 +1,6 @@
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   box-sizing: inherit; }
 
 html {
@@ -8,7 +8,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  color: #222222;
+  color: #222;
   font-size: 1.6em;
   font-weight: 300;
   letter-spacing: 0.01em;
@@ -30,7 +30,7 @@ input[type='submit'] {
   background-color: #850322;
   border: 0.1rem solid #850322;
   border-radius: 0.4rem;
-  color: #fff;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-size: 1.1rem;
@@ -52,9 +52,9 @@ input[type='submit'] {
   input[type='reset']:hover,
   input[type='submit']:focus,
   input[type='submit']:hover {
-    background-color: #222222;
-    border-color: #222222;
-    color: #fff;
+    background-color: #222;
+    border-color: #222;
+    color: white;
     outline: 0; }
   .button[disabled],
   button[disabled],
@@ -91,8 +91,8 @@ input[type='submit'] {
     input[type='submit'].button-outline:focus,
     input[type='submit'].button-outline:hover {
       background-color: transparent;
-      border-color: #222222;
-      color: #222222; }
+      border-color: #222;
+      color: #222; }
     .button.button-outline[disabled]:focus, .button.button-outline[disabled]:hover,
     button.button-outline[disabled]:focus,
     button.button-outline[disabled]:hover,
@@ -123,7 +123,7 @@ input[type='submit'] {
     input[type='submit'].button-clear:hover {
       background-color: transparent;
       border-color: transparent;
-      color: #222222; }
+      color: #222; }
     .button.button-clear[disabled]:focus, .button.button-clear[disabled]:hover,
     button.button-clear[disabled]:focus,
     button.button-clear[disabled]:hover,
@@ -155,7 +155,7 @@ pre {
 
 hr {
   border: 0;
-  border-top: 0.1rem solid #222222;
+  border-top: 0.1rem solid #222;
   margin: 3rem 0; }
 
 input[type='email'],
@@ -235,7 +235,13 @@ a {
   color: #850322; }
   a:focus, a:hover {
     text-decoration: none;
-    color: #24A4E2; }
+    color: #24a4e2; }
+
+ol {
+  list-style: decimal inside; }
+
+ul {
+  list-style: circle inside; }
 
 dl,
 ol,
@@ -254,12 +260,6 @@ ul {
   ul ul {
     font-size: 90%;
     margin: 1.5rem 0 1.5rem 3rem; }
-
-ol {
-  list-style: decimal inside; }
-
-ul {
-  list-style: circle inside; }
 
 .button,
 button,
