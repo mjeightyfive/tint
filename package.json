@@ -1,6 +1,6 @@
 {
     "name": "@mjeightyfive/tint",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "base css styles",
     "main": "src/scss/tint.scss",
     "scripts": {
